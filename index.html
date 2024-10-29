@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/cup.png" type="image/png">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./src/output.css">
+
     <title>Cafe</title>
 </head>
 <body>
     
-    <div x-data="{ message: 'Hello, world!', show: true }">
-        <button @click="show = !show">click me</button>
-        
-        <p x-show="show">This message can be toggled.</p>
-    </div> 
+    <div class="flex justify-between p-3 pl-6 pr-6">
+            <p class="italic">Kavica</p>
+                <nav class="">
+                    <li class="flex justify-between gap-7">
+                        <a href="#home" class="hover:underline">Home</a>
+                        <a href="#menu" class="hover:underline">Menu</a>
+                        <a href="#about" class="hover:underline">About</a>
+                    </li>
+                </nav>
+    </div>
+
+    
+    <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 100)" class="z-10">
+        <!-- Fade-in block -->
+        <div 
+            x-show="show" 
+            x-transition:enter="transition-opacity ease-in-out duration-10000"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            class="w-[45rem] h-96 min-h-[10rem] bg-[rgba(121,87,87,0.8)] mx-auto mt-16 flex items-center justify-center text-white text-2xl font-semibold"
+            style="background-color: rgba(121, 87, 87, 0.8);"
+        >
+            <p class="italic font-extralight">Grab a coffee on us ♡</p>
+        </div>
+    </div>
+    
+    <div class="collage grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 opacity-7">
+        <img src="./img/beans.avif" alt="beans" class="w-full h-auto">
+        <img src="./img/cofe.avif" alt="coffee" class="kofii w-full h-auto">
+        <img src="./img/coffee.avif" alt="coffee" class="w-full h-auto">
+        <img src="./img/kofi.avif" alt="beans" class="kofi2 w-full h-auto -mt-64">
+        <img src="./img/kofii.avif" alt="coffee" class="kofi w-full h-auto -mt-64">
+    </div>
+    
+    
+    
+    
 
 </body>
 </html>

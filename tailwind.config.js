@@ -5,4 +5,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  script: {
+    build: "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  }
 }

@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #3B3030;
+    color: #FFEBC9;
+}
+li >a {
+    text-underline-offset: 4px;
+}
+.collage {
+    background-color: #ffebc9c9;
+    border-top: 5px solid #ffebc9c9;
+    margin-top: -420px;
+    z-index: -1;
+}
+.kofi {
+    margin-left: 425px;
+    margin-top: -288px
+
+}
+.kofi2 {
+    margin-top: -288px
+}
+.kofii {
+    height: 570px;
+}
