@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #3B3030;
     color: #FFEBC9;
+    box-sizing: border-box;
 }
 li >a {
     text-underline-offset: 4px;
@@ -12,7 +19,8 @@ li >a {
 .collage {
     background-color: #ffebc9c9;
     border-top: 5px solid #ffebc9c9;
-    margin-top: -420px;
+    margin-top: -440px;
+    position: relative;
     z-index: -1;
 }
 .kofi {

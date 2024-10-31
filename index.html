@@ -23,7 +23,7 @@
     </div>
 
     
-    <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 100)" class="z-10">
+    <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 100)" class="z-10 relative flex-wrap justify-center sm:min-w-1">
         <!-- Fade-in block -->
         <div 
             x-show="show" 
@@ -31,13 +31,13 @@
             x-transition:enter-start="opacity-0"
             x-transition:enter-end="opacity-100"
             class="w-[45rem] h-96 min-h-[10rem] bg-[rgba(121,87,87,0.8)] mx-auto mt-16 flex items-center justify-center text-white text-2xl font-semibold"
-            style="background-color: rgba(121, 87, 87, 0.8);"
+            style="background-color: rgba(121, 87, 87, 0.938);"
         >
             <p class="italic font-extralight">Grab a coffee on us ♡</p>
         </div>
     </div>
     
-    <div class="collage grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 opacity-7">
+    <div class="collage flex wrap grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 opacity-65 overflow-x-hidden">
         <img src="./img/beans.avif" alt="beans" class="w-full h-auto">
         <img src="./img/cofe.avif" alt="coffee" class="kofii w-full h-auto">
         <img src="./img/coffee.avif" alt="coffee" class="w-full h-auto">
